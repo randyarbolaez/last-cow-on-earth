@@ -10,7 +10,7 @@ img.src = './images/background.jpg';
 var backgroundImage = {
   img: img,
   x: 0,
-  speed: -1,
+  speed: -2,
 
   move: function() {
     this.x += this.speed;
@@ -37,5 +37,3 @@ function updateCanvas() {
 }
 
 img.onload = updateCanvas;
-
-//===================================================================================

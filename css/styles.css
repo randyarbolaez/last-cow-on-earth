@@ -1,19 +1,21 @@
 .container {
-  background: url('../Images/alien-ufo-background.jpg');
-  background-repeat: no-repeat;
+  background: url('../Images/background-image-abducting.jpg');
+  /* background-repeat: no-repeat; */
   background-size: cover;
   height: 100%;
   margin: 0 auto;
   /* padding-bottom: 85px; */
+  width: auto;
 }
 .btn {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 #start-game-btn {
   background-image: url(../images/button-picture.jpg);
-  color: #80d82b;
+  color: ivory;
   height: 50px;
   width: 200px;
   border-radius: 13px;
@@ -22,12 +24,12 @@
   align-self: center;
 }
 
-.ufo-gif {
+/* .ufo-gif {
   background-image: url('../images/UFO.gif');
   background-repeat: no-repeat;
   height: 240px;
   width: auto;
-}
+} */
 
 .how-to-play {
   display: flex;
@@ -35,15 +37,18 @@
 }
 
 .header-how-to-play {
-  color: #80d82b;
+  color: ivory;
   font-family: 'comic sans ms';
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .arrow-key-how-to-play {
-  width: 200px;
+  width: 150px;
   align-self: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 body {
@@ -55,7 +60,7 @@ body {
 }
 
 .text-how-to-play {
-  color: #80d82b;
+  color: ivory;
   display: flex;
   font-family: 'comic sans ms';
   justify-content: center;
@@ -67,12 +72,12 @@ body {
   background-position: 10% 5%;
 } */
 
-#canvas {
+/* #canvas {
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: 0;
-}
+} */
 
 #canvas-cow {
   position: absolute;
@@ -81,8 +86,15 @@ body {
   z-index: 1;
 }
 
+#canvas-ufo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
 .canvas-container {
   position: relative;
-  height: 1200px;
-  width: 1200px;
+  height: 1500px;
+  width: 1500px;
 }
