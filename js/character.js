@@ -1,5 +1,5 @@
-var canWidth = 2000;
-var canHeight = 2000;
+var canWidth = 1276;
+var canHeight = 1300;
 var canvasCharacter = document.getElementById('canvas-cow');
 canvasCharacter.width = canWidth;
 canvasCharacter.height = canHeight;
@@ -73,3 +73,5 @@ function drawImage() {
 setInterval(function() {
   drawImage();
 }, 100);
+
+////////////////////////////BOUNDARIES////////////////////////////////////
