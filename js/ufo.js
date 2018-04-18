@@ -49,8 +49,8 @@ ufoCharacter.src = './images/sprites/sprite-ufo-background.png';
 function updateFrameUfo() {
   ufoCurrentFrame = ++ufoCurrentFrame % ufoCols;
   ufoSrcX = ufoCurrentFrame * ufoWidth;
-  ufoSrcY = 0;
   ctx3.clearRect(ufoX, ufoY, ufoWidth, ufoHeight);
+  ufoSrcY = 0;
 }
 
 function drawImageUfo() {

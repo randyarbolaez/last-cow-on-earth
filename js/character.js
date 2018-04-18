@@ -1,9 +1,9 @@
 var canWidth = 2000;
 var canHeight = 2000;
-var canvasCow = document.getElementById('canvas-cow');
-canvasCow.width = canWidth;
-canvasCow.height = canHeight;
-var ctx2 = canvasCow.getContext('2d');
+var canvasCharacter = document.getElementById('canvas-cow');
+canvasCharacter.width = canWidth;
+canvasCharacter.height = canHeight;
+var ctx2 = canvasCharacter.getContext('2d');
 
 var x = 0;
 var y = 500;
@@ -12,10 +12,12 @@ var srcX;
 var srcY;
 
 function moveLeft() {
+  left = true;
   x -= 10;
 }
 
 function moveRight() {
+  left = false;
   x += 10;
 }
 
@@ -38,6 +40,12 @@ var frameCount = 8;
 var cols = 8;
 var rows = 2;
 
+var left = false;
+var right = true;
+
+var trackLeft = 1;
+var trackRight = 0;
+
 var width = sheetWidth / cols;
 var height = sheetHeight / rows;
 
@@ -47,10 +55,14 @@ var character = new Image();
 character.src = './images/sprites/character.png';
 
 function updateFrame() {
-  ctx2.clearRect(x - 20, y, width + 100, height + 20);
   currentFrame = ++currentFrame % cols;
+  ctx2.clearRect(x - 20, y - 20, width + 100, height + 100);
   srcX = currentFrame * width;
-  srcY = 0;
+  if (left) {
+    srcY = trackLeft * height;
+  } else {
+    srcY = trackRight * height;
+  }
 }
 
 function drawImage() {
