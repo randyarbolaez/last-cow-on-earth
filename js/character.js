@@ -1,11 +1,12 @@
-var canWidth = 1276;
-var canHeight = 1300;
+var canWidth = 1280;
+var canHeight = 720;
+
 var canvasCharacter = document.getElementById('canvas-cow');
 canvasCharacter.width = canWidth;
 canvasCharacter.height = canHeight;
 var ctx2 = canvasCharacter.getContext('2d');
 
-var x = 0;
+var x = 220;
 var y = 500;
 
 var srcX;
@@ -21,16 +22,16 @@ function moveRight() {
   x += 10;
 }
 
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 37:
-      moveLeft();
-      break;
-    case 39:
-      moveRight();
-      break;
-  }
-};
+// document.onkeydown = function(e) {
+//   switch (e.keyCode) {
+//     case 37:
+//       moveLeft();
+//       break;
+//     case 39:
+//       moveRight();
+//       break;
+//   }
+// };
 
 var sheetWidth = 864;
 var sheetHeight = 280;
@@ -73,5 +74,3 @@ function drawImage() {
 setInterval(function() {
   drawImage();
 }, 100);
-
-////////////////////////////BOUNDARIES////////////////////////////////////

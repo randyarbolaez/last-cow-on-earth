@@ -1,34 +1,19 @@
-var ufoCanWidth = 2000;
-var ufoCanHeight = 2000;
+var ufoCanWidth = 1500;
+var ufoCanHeight = 720;
+
+// var ufoCanWidth = (canvas.width = window.innerWidth);
+// var ufoCanHeight = (canvas.height = window.innerHeight);
+
 var canvasUfo = document.getElementById('canvas-ufo');
 canvasUfo.width = ufoCanWidth;
 canvasUfo.height = ufoCanHeight;
 var ctx3 = canvasUfo.getContext('2d');
 
-var ufoX = 200;
+var ufoX = 1050;
 var ufoY = 30;
 
 var ufoSrcX;
 var ufoSrcY;
-
-function moveUp() {
-  y -= 12;
-}
-
-function moveDown() {
-  y += 12;
-}
-
-document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 87:
-      moveUp();
-      break;
-    case 83:
-      moveDown();
-      break;
-  }
-};
 
 var ufoSheetWidth = 2240;
 var ufoSheetHeight = 377;

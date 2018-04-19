@@ -1,14 +1,17 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
 
-var img = new Image();
-img.src = './images/background.jpg';
+canvas.width = 1280;
+canvas.height = 720;
 
-var backgroundImage = {
-  img: img,
+var backgroundImage = new Image();
+backgroundImage.src = './images/background.jpg';
+
+var background = {
+  backgroundImage: backgroundImage,
   x: 0,
   speed: -2,
 
@@ -18,22 +21,35 @@ var backgroundImage = {
   },
 
   draw: function() {
-    ctx.drawImage(this.img, this.x, 0);
+    ctx.drawImage(this.backgroundImage, this.x, 0);
     if (this.speed < 0) {
-      ctx.drawImage(this.img, this.x + canvas.width, 0);
+      ctx.drawImage(this.backgroundImage, this.x + canvas.width, 0);
     } else {
-      ctx.drawImage(this.img, this.x - this.img.width, 0);
+      ctx.drawImage(
+        this.backgroundImage,
+        this.x - this.backgroundImage.width,
+        0
+      );
     }
   },
 };
 
 function updateCanvas() {
-  backgroundImage.move();
-
+  background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  backgroundImage.draw();
+
+  background.draw();
 
   window.requestAnimationFrame(updateCanvas);
+  drawObstacle(); // located in Obstacle.js
 }
 
-img.onload = updateCanvas;
+//backgroundImage.onload = updateCanvas;
+//================
+backgroundImage.onload = function() {
+  // var ptrn = ctx.createPattern(backgroundImage, 'repeat-x');
+  // ctx.fillStyle = ptrn;
+  // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  updateCanvas();
+};

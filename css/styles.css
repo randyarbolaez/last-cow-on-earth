@@ -1,83 +1,33 @@
-.container {
-  background: url('../Images/background-image-abducting.jpg');
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  height: 100%;
-  margin: 0 auto;
-  /* padding-bottom: 85px; */
-  width: auto;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
-
-#start-game-btn {
-  background-image: url(../images/button-picture.jpg);
-  color: ivory;
-  height: 50px;
-  width: 200px;
-  border-radius: 13px;
-  font-family: 'comic sans ms';
-  font-size: 19px;
-  align-self: center;
-}
-
-/* .ufo-gif {
-  background-image: url('../images/UFO.gif');
-  background-repeat: no-repeat;
-  height: 240px;
-  width: auto;
-} */
-
-.how-to-play {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-how-to-play {
-  color: ivory;
-  font-family: 'comic sans ms';
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.arrow-key-how-to-play {
-  width: 150px;
-  align-self: center;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
+html,
 body {
-  /* background: black; */
-  height: 100%;
-  margin: 0 auto;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
 }
 
-.text-how-to-play {
-  color: ivory;
-  display: flex;
-  font-family: 'comic sans ms';
-  justify-content: center;
-  text-align: center;
+.canvas-container {
+  position: relative;
+  /* width: 100%; */
+  /* margin: 0 auto; */
 }
 
-/* #background {
-  background-image: url('../images/unnamed.jpg');
-  background-position: 10% 5%;
-} */
+.wrapper {
+  background-color: #000000;
+}
 
-/* #canvas {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 0;
-} */
+.game-title h1 {
+  color: red;
+}
 
 #canvas-cow {
   position: absolute;
@@ -93,8 +43,13 @@ body {
   z-index: 1;
 }
 
-.canvas-container {
-  position: relative;
-  height: 1500px;
-  width: 1500px;
+footer {
+}
+footer p {
+  color: red;
+}
+
+.footer-container {
+  text-align: center;
+  border-bottom: solid 1px #000;
 }
