@@ -22,17 +22,6 @@ function moveRight() {
   x += 10;
 }
 
-// document.onkeydown = function(e) {
-//   switch (e.keyCode) {
-//     case 37:
-//       moveLeft();
-//       break;
-//     case 39:
-//       moveRight();
-//       break;
-//   }
-// };
-
 var sheetWidth = 864;
 var sheetHeight = 280;
 

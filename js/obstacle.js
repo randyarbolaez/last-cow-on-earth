@@ -15,7 +15,7 @@ Obstacle.prototype.draw = function() {
 var currentGame = [];
 
 var leftWall = new Obstacle(0, 0, 30, 720);
-var rightWall = new Obstacle(1200, 0, 100, 720);
+var rightWall = new Obstacle(1250, 0, 30, 720);
 
 currentGame.push(leftWall, rightWall);
 
@@ -31,7 +31,7 @@ function drawObstacle() {
 // startGame();
 // =============================================================
 
-function canMove(futureX, futureY) {
+function hitObstacle(futureX, futureY) {
   var canIMove = true;
   currentGame.forEach(function(key) {
     if (
@@ -57,13 +57,13 @@ document.onkeydown = function(event) {
   // ctx.clearRect(x, y, width, height);
   switch (directionCode) {
     case 37:
-      if (canMove(x - 70, y)) {
+      if (hitObstacle(x - 10, y)) {
         moveLeft();
       }
       break;
 
     case 39:
-      if (canMove(x + 50, y)) {
+      if (hitObstacle(x + 80, y)) {
         moveRight();
       }
       break;
