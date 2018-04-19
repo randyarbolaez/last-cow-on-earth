@@ -47,6 +47,13 @@ canvas#canvas {
   top: 0px;
 }
 
+#canvas-laser {
+  position: absolute;
+  z-index: 12;
+  left: 0px;
+  top: 0px;
+}
+
 footer {
 }
 footer p {
