@@ -6,7 +6,7 @@ function score() {
   function test() {
     timer++;
   }
-  ctx.fillText('Survival Time: ' + interval, 900, 100);
+  ctx.fillText('Survival Time: ' + interval, 800, 100);
   ctx.fillStyle = 'black';
   ctx.font = '50px Sans Serif';
 }
