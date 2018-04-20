@@ -14,12 +14,12 @@ var srcY;
 
 function moveLeft() {
   left = true;
-  x -= 25;
+  x -= 15;
 }
 
 function moveRight() {
   left = false;
-  x += 25;
+  x += 15;
 }
 
 var sheetWidth = 864;
@@ -46,7 +46,7 @@ character.src = './images/sprites/character.png';
 
 function updateFrame() {
   currentFrame = ++currentFrame % cols;
-  ctx2.clearRect(x - 70, y - 100, width + 140, height + 100);
+  ctx2.clearRect(x - 70, y - 20, width + 140, height + 100);
   // ctx2.clearRect(x + 100, y, width, height);
   srcX = currentFrame * width;
   if (left) {

@@ -28,18 +28,25 @@ var background = {
     }
   },
 };
-// function score() {
-//   ctx.fillText('Score: ', 1000, 100);
-//   this.ctx.fillStyle = 'greenYellow';
-//   this.ctx.font = '50px Sans Serif';
-// }
+
+function score() {
+  var timer = 0;
+
+  var interval = setInterval(test, 1000);
+
+  function test() {
+    timer++;
+  }
+  ctx.fillText('Score: ' + interval, 950, 100);
+  this.ctx.fillStyle = 'greenYellow';
+  this.ctx.font = '50px Sans Serif';
+}
 
 function updateCanvas() {
   // background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
   background.draw();
-  // score();
+  score();
 
   window.requestAnimationFrame(updateCanvas);
   drawObstacle(); // located in Obstacle.js

@@ -57,7 +57,7 @@ document.onkeydown = function(event) {
   // ctx.clearRect(x, y, width, height);
   switch (directionCode) {
     case 37:
-      if (hitObstacle(x - 10, y)) {
+      if (hitObstacle(x - 30, y)) {
         // single variable Truthy check
         moveLeft();
       }

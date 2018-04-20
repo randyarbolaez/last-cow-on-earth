@@ -5,7 +5,7 @@
 //var ctx = laserCanvas.getContext('2d');
 
 // ======================CHANGES-MADE====================================
-setInterval(updateCanvasLaser, 30);
+setInterval(updateCanvasLaser, 10);
 var frames = 0;
 // ====================================================================
 
