@@ -59,6 +59,10 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+
+body {
+  background: black;
+}
 h1 {
   margin: 0;
   padding: 0;
@@ -79,13 +83,17 @@ canvas#canvas {
 }
 
 .wrapper {
-  background-color: purple;
+  background-color: black;
 }
 
 .game-title h1 {
   color: greenyellow;
   text-align: center;
   font-size: 40px;
+}
+
+.game-title {
+  padding-top: 25px;
 }
 
 .score {

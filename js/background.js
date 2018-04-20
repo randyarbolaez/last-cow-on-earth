@@ -29,18 +29,18 @@ var background = {
   },
 };
 
-function score() {
-  var timer = 0;
+// function score() {
+//   var timer = 0;
 
-  var interval = setInterval(test, 1000);
+//   var interval = setInterval(test, 1000);
 
-  function test() {
-    timer++;
-  }
-  ctx.fillText('Score: ' + interval, 950, 100);
-  ctx.fillStyle = 'greenYellow';
-  ctx.font = '50px Sans Serif';
-}
+//   function test() {
+//     timer++;
+//   }
+//   ctx.fillText('Score: ' + interval, 950, 100);
+//   ctx.fillStyle = 'black';
+//   ctx.font = '50px Sans Serif';
+// }
 
 function updateCanvas() {
   // background.move();
