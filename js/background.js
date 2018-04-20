@@ -38,8 +38,8 @@ function score() {
     timer++;
   }
   ctx.fillText('Score: ' + interval, 950, 100);
-  this.ctx.fillStyle = 'greenYellow';
-  this.ctx.font = '50px Sans Serif';
+  ctx.fillStyle = 'greenYellow';
+  ctx.font = '50px Sans Serif';
 }
 
 function updateCanvas() {

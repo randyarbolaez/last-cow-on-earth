@@ -1,3 +1,48 @@
+.container {
+  background: url(../images/background-image-abducting.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-game-btn {
+  background: url(../Images/button-picture.jpg);
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+  font-size: 29px;
+  font-family: hans serif;
+}
+
+.how-to-play {
+  display: flex;
+  flex-direction: column;
+}
+.header-how-to-play {
+  color: white;
+  font-size: 45px;
+  font-family: hans serif;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.arrow-key-how-to-play {
+  width: 500px;
+}
+
+.text-how-to-play {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
 html,
 body {
   width: 100%;
