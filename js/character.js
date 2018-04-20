@@ -42,7 +42,7 @@ var height = sheetHeight / rows; // ------- Height of character
 var currentFrame = 0;
 
 var character = new Image();
-character.src = './images/sprites/character.png';
+character.src = './Images/sprites/character.png';
 
 function updateFrame() {
   currentFrame = ++currentFrame % cols;

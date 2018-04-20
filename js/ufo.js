@@ -41,7 +41,7 @@ var ufoHeight = ufoSheetHeight / ufoRows;
 var ufoCurrentFrame = 0;
 
 var ufoCharacter = new Image();
-ufoCharacter.src = './images/sprites/sprite-ufo-background.png';
+ufoCharacter.src = './Images/sprites/sprite-ufo-background.png';
 
 function updateFrameUfo() {
   ufoCurrentFrame = ++ufoCurrentFrame % ufoCols;
