@@ -19,18 +19,25 @@ canvas#canvas {
   z-index: 1;
 }
 .canvas-container {
-  background-color: #333;
+  /* background-color: yellow; */
   position: relative;
   width: 1280px;
   margin: 0 auto;
 }
 
 .wrapper {
-  background-color: #eee;
+  background-color: purple;
 }
 
 .game-title h1 {
-  color: red;
+  color: greenyellow;
+  text-align: center;
+  font-size: 40px;
+}
+
+.score {
+  color: greenyellow;
+  text-align: center;
 }
 
 #canvas-cow {
@@ -47,15 +54,6 @@ canvas#canvas {
   top: 0px;
 }
 
-#canvas-laser {
-  position: absolute;
-  z-index: 12;
-  left: 0px;
-  top: 0px;
-}
-
-footer {
-}
 footer p {
   color: red;
 }

@@ -58,12 +58,13 @@ document.onkeydown = function(event) {
   switch (directionCode) {
     case 37:
       if (hitObstacle(x - 10, y)) {
+        // single variable Truthy check
         moveLeft();
       }
       break;
 
     case 39:
-      if (hitObstacle(x + 80, y)) {
+      if (hitObstacle(x + 120, y)) {
         moveRight();
       }
       break;

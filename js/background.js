@@ -15,11 +15,6 @@ var background = {
   x: 0,
   speed: -2,
 
-  move: function() {
-    this.x += this.speed;
-    this.x %= canvas.width;
-  },
-
   draw: function() {
     ctx.drawImage(this.backgroundImage, this.x, 0);
     if (this.speed < 0) {
@@ -33,12 +28,18 @@ var background = {
     }
   },
 };
+// function score() {
+//   ctx.fillText('Score: ', 1000, 100);
+//   this.ctx.fillStyle = 'greenYellow';
+//   this.ctx.font = '50px Sans Serif';
+// }
 
 function updateCanvas() {
-  //background.move();
+  // background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   background.draw();
+  // score();
 
   window.requestAnimationFrame(updateCanvas);
   drawObstacle(); // located in Obstacle.js
