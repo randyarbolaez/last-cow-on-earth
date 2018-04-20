@@ -10,7 +10,7 @@ canvas.height = 720;
 var backgroundImage = new Image();
 backgroundImage.src = '../Images/background.jpg';
 
-last - cow - on - earth / Images / background.jpg;
+// last - cow - on - earth / Images / background.jpg;
 
 var background = {
   backgroundImage: backgroundImage,
