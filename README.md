@@ -1,3 +1,3 @@
 # Demo
 
-[Demo-Link](https://randyarbolaez.github.io/last-cow-on-earth/)
+[Demo-Link](https://randyarbolaez.github.io/last-man-on-earth/)
