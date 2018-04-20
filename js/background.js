@@ -8,7 +8,7 @@ canvas.width = 1280;
 canvas.height = 720;
 
 var backgroundImage = new Image();
-backgroundImage.src = './images/background.jpg';
+backgroundImage.src = '../images/background.jpg';
 
 var background = {
   backgroundImage: backgroundImage,
