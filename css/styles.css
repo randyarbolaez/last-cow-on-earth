@@ -11,9 +11,9 @@
 }
 
 #start-game-btn {
-  background: url('../Images/button-picture.jpg');
-  height: 100px;
-  width: 300px;
+  background: url(../Images/button-picture.jpg);
+  height: 60px;
+  width: 250px;
   border-radius: 10px;
   color: white;
   font-size: 29px;
@@ -22,11 +22,10 @@
 
 .header-how-to-play {
   color: white;
-  font-size: 45px;
+  font-size: 40px;
   font-family: hans serif;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 20px;
 }
 
 .how-to-play {
@@ -42,12 +41,13 @@
 }
 
 .arrow-key-how-to-play {
-  width: 500px;
+  width: 170px;
+  padding-top: 10px;
 }
 
 .text-how-to-play {
-  font-size: 50px;
-  color: white;
+  font-size: 25px;
+  color: #6cc417;
   text-align: center;
 }
 
