@@ -14,12 +14,12 @@ var srcY;
 
 function moveLeft() {
   left = true;
-  x -= 15;
+  x -= 25;
 }
 
 function moveRight() {
   left = false;
-  x += 15;
+  x += 25;
 }
 
 var sheetWidth = 864;

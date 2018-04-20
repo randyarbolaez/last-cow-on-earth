@@ -75,7 +75,7 @@ function updateCanvasLaser() {
 
   frames++;
 
-  if (frames % 40 === 1) {
+  if (frames % 25 === 1) {
     wallX = ufoX + 140;
     wallX = ufoX + 140;
     wallWidth = 13;
