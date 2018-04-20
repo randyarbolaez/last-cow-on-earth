@@ -20,10 +20,6 @@
   font-family: hans serif;
 }
 
-.how-to-play {
-  display: flex;
-  flex-direction: column;
-}
 .header-how-to-play {
   color: white;
   font-size: 45px;
@@ -31,6 +27,18 @@
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.how-to-play {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-of-game {
+  color: #6cc417;
+  font-size: 100px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 .arrow-key-how-to-play {
