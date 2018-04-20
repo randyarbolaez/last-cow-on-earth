@@ -1,5 +1,5 @@
 .container {
-  background: url(../Images/background-image-abducting.jpg);
+  background: url('../Images/background-image-abducting.jpg');
   background-repeat: no-repeat;
   width: auto;
   height: 100%;
@@ -11,7 +11,7 @@
 }
 
 #start-game-btn {
-  background: url(../Images/button-picture.jpg);
+  background: url('../Images/button-picture.jpg');
   height: 100px;
   width: 300px;
   border-radius: 10px;
