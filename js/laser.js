@@ -63,9 +63,10 @@ function Component(widthvalue, heightvalue, xvalue, yvalue) {
 
 function gameOver() {
   setTimeout(function() {
-    alert('YOU LOST, LOSER');
+    // alert('YOU LOST, LOSER');
+    window.location.replace('gameover.html');
   }, 10);
-  location.reload(true);
+  // location.reload(true);
 }
 
 function updateCanvasLaser() {
