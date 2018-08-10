@@ -1,3 +1,7 @@
+function goToMainPage() {
+  console.log('hey');
+}
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -43,7 +47,7 @@ var background = {
 // }
 
 function updateCanvas() {
-  // background.move();
+  // var blah = background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   background.draw();
   score();
