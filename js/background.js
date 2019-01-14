@@ -56,7 +56,7 @@ function updateCanvas() {
   drawObstacle(); // located in Obstacle.js
 }
 
-//backgroundImage.onload = updateCanvas;
+backgroundImage.onload = updateCanvas;
 //================
 backgroundImage.onload = function() {
   // var ptrn = ctx.createPattern(backgroundImage, 'repeat-x');
