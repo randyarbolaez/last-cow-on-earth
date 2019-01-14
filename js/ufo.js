@@ -9,17 +9,11 @@ canvasUfo.width = ufoCanWidth;
 canvasUfo.height = ufoCanHeight;
 var ctx3 = canvasUfo.getContext('2d');
 
-// function ufoTeleportation() {
-//   var timer = 0;
-
-//   var interval = setInterval(ufoMove, 1000);
-
-// }
-
+// HOW FAST THE UFO MOVES ******** COULD MAKE DIFFERENT DIFFICULTIES BY CHANGING THE SPEED OF UFO
 var ufoMove = setInterval(function() {
   ufoX = Math.floor(Math.random() * 900);
 }, 500);
-// var ufoMove = Math.floor(Math.random() * 1000);
+// HOW FAST THE UFO MOVES ******** COULD MAKE DIFFERENT DIFFICULTIES BY CHANGING THE SPEED OF UFO
 
 var ufoX = ufoMove; // position on screen
 var ufoY = 30; // position on screen
@@ -35,8 +29,8 @@ var ufoSheetHeight = 377;
 var ufoCols = 8;
 var ufoRows = 3;
 
-var ufoWidth = ufoSheetWidth / ufoCols;
-var ufoHeight = ufoSheetHeight / ufoRows;
+var ufoWidth = ufoSheetWidth / ufoCols; // ------- Width of UFO
+var ufoHeight = ufoSheetHeight / ufoRows; // ------- Height of UFO
 
 var ufoCurrentFrame = 0;
 

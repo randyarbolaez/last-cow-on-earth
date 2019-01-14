@@ -1,3 +1,7 @@
+function goToMainPage() {
+  console.log('hey');
+}
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -29,30 +33,30 @@ var background = {
   },
 };
 
-function score() {
-  var timer = 0;
+// function score() {
+//   var timer = 0;
 
-  var interval = setInterval(test, 1000);
+//   var interval = setInterval(test, 1000);
 
-  function test() {
-    timer++;
-  }
-  ctx.fillText('Score: ' + interval, 950, 100);
-  ctx.fillStyle = 'greenYellow';
-  ctx.font = '50px Sans Serif';
-}
+//   function test() {
+//     timer++;
+//   }
+//   ctx.fillText('Score: ' + interval, 950, 100);
+//   ctx.fillStyle = 'black';
+//   ctx.font = '50px Sans Serif';
+// }
 
 function updateCanvas() {
-  // background.move();
+  // var blah = background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   background.draw();
-  score();
+  // score();
 
   window.requestAnimationFrame(updateCanvas);
   drawObstacle(); // located in Obstacle.js
 }
 
-//backgroundImage.onload = updateCanvas;
+backgroundImage.onload = updateCanvas;
 //================
 backgroundImage.onload = function() {
   // var ptrn = ctx.createPattern(backgroundImage, 'repeat-x');

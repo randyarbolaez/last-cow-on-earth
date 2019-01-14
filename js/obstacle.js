@@ -14,8 +14,12 @@ Obstacle.prototype.draw = function() {
 
 var currentGame = [];
 
+// PLAYERS CANT MOVE MOVE PAST THE COORDINATES
+
 var leftWall = new Obstacle(0, 0, 30, 720);
 var rightWall = new Obstacle(1250, 0, 30, 720);
+
+// PLAYERS CANT MOVE MOVE PAST THE COORDINATES
 
 currentGame.push(leftWall, rightWall);
 
@@ -29,6 +33,8 @@ function drawObstacle() {
 // }
 //----------------->>>>>>
 // startGame();
+
+// CHARACTER CANT MOVE PAST THE X-CORDINATE
 // =============================================================
 
 function hitObstacle(futureX, futureY) {
@@ -46,6 +52,7 @@ function hitObstacle(futureX, futureY) {
   return canIMove;
 }
 //===================================================================
+// CHARACTER CANT MOVE PAST THE X-CORDINATE
 
 document.onkeydown = function(event) {
   if (event.which === 37 || event.which === 39) {
