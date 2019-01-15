@@ -1,5 +1,5 @@
 .container {
-  background: url('../Images/background-image-abducting.jpg');
+  background: #2a94be;
   background-repeat: no-repeat;
   width: auto;
   height: 100%;
@@ -12,12 +12,12 @@
 
 #start-game-btn {
   background: url(../Images/button-picture.jpg);
-  height: 60px;
-  width: 250px;
+  height: 10vh;
+  width: 25vw;
   border-radius: 10px;
-  color: white;
-  font-size: 29px;
-  font-family: hans serif;
+  color: #00ff9f;
+  font-size: 30px;
+  font-family: Comic Sans MS;
 }
 
 .header-how-to-play {
@@ -34,10 +34,9 @@
 }
 
 .name-of-game {
-  color: #6cc417;
+  color: #00ff9f;
   font-size: 60px;
-  padding-top: 40px;
-  padding-bottom: 100px;
+  margin: 2%;
 }
 
 .arrow-key-how-to-play {
@@ -47,7 +46,7 @@
 
 .text-how-to-play {
   font-size: 25px;
-  color: #6cc417;
+  color: #00ff9f;
   text-align: center;
 }
 
@@ -87,7 +86,7 @@ canvas#canvas {
 }
 
 .game-title h1 {
-  color: greenyellow;
+  color: #00ff9f;
   text-align: center;
   font-size: 40px;
 }
@@ -97,7 +96,7 @@ canvas#canvas {
 }
 
 .score {
-  color: greenyellow;
+  color: #00ff9f;
   text-align: center;
 }
 
@@ -122,4 +121,11 @@ footer p {
 .footer-container {
   text-align: center;
   border-bottom: solid 1px #000;
+}
+
+fieldset {
+  margin: 5%;
+  color: #000;
+  border-width: 0.2in;
+  border-color: #2a94be;
 }
