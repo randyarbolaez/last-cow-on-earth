@@ -1,7 +1,7 @@
-# Demo
+# Check It Out
 
-[Demo-Link](https://randyarbolaez.github.io/last-man-on-earth/)
+[last-man-on-earth](https://randyarbolaez.github.io/last-man-on-earth/)
 
 # LinkedIn
 
-[Demo-Link](https://www.linkedin.com/in/randyarbolaez/)
+[LinkedIn](https://www.linkedin.com/in/randyarbolaez/)
