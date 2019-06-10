@@ -100,7 +100,7 @@ canvas#canvas {
   text-align: center;
 }
 
-#canvas-cow {
+#canvas-character {
   position: absolute;
   z-index: 11;
   left: 0px;

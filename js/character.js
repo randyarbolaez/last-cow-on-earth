@@ -1,7 +1,7 @@
 var canWidth = 1280;
 var canHeight = 720;
 
-var canvasCharacter = document.getElementById('canvas-cow');
+var canvasCharacter = document.getElementById('canvas-character');
 canvasCharacter.width = canWidth;
 canvasCharacter.height = canHeight;
 var ctx2 = canvasCharacter.getContext('2d');
@@ -47,7 +47,6 @@ character.src = './Images/sprites/character.png';
 function updateFrame() {
   currentFrame = ++currentFrame % cols;
   ctx2.clearRect(x - 70, y - 20, width + 140, height + 100);
-  // ctx2.clearRect(x + 100, y, width, height);
   srcX = currentFrame * width;
   if (left) {
     srcY = trackLeft * height;

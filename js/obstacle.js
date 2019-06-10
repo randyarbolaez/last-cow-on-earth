@@ -10,29 +10,17 @@ Obstacle.prototype.draw = function() {
   ctx.fillRect(this.x, this.y, this.width, this.height);
 };
 // =============================================================
-// function startGame() {
 
 var currentGame = [];
 
-// PLAYERS CANT MOVE MOVE PAST THE COORDINATES
+// PLAYER CANT MOVE MOVE PAST THE COORDINATES
 
 var leftWall = new Obstacle(0, 0, 30, 720);
 var rightWall = new Obstacle(1250, 0, 30, 720);
 
-// PLAYERS CANT MOVE MOVE PAST THE COORDINATES
+// PLAYER CANT MOVE MOVE PAST THE COORDINATES
 
 currentGame.push(leftWall, rightWall);
-
-function drawObstacle() {
-  // Called inside background.js
-  currentGame.forEach(function(key) {
-    key.draw();
-  });
-}
-
-// }
-//----------------->>>>>>
-// startGame();
 
 // CHARACTER CANT MOVE PAST THE X-CORDINATE
 // =============================================================
@@ -46,11 +34,12 @@ function hitObstacle(futureX, futureY) {
       (futureY >= key.y && futureY <= key.y + key.height)
     ) {
       canIMove = false;
-      console.log('ouch');
+      console.log("ouch, there's an invisible wall!!!!!");
     }
   });
   return canIMove;
 }
+
 //===================================================================
 // CHARACTER CANT MOVE PAST THE X-CORDINATE
 
@@ -58,14 +47,12 @@ document.onkeydown = function(event) {
   if (event.which === 37 || event.which === 39) {
     event.preventDefault();
   }
+
   var directionCode = event.which;
 
-  //----- Next Step -----
-  // ctx.clearRect(x, y, width, height);
   switch (directionCode) {
     case 37:
       if (hitObstacle(x - 30, y)) {
-        // single variable Truthy check
         moveLeft();
       }
       break;
@@ -77,6 +64,7 @@ document.onkeydown = function(event) {
       break;
 
     default:
-      console.log('oops');
+      console.log('oops, wrong key');
+      break;
   } // End Switch
 }; // END document.onkeydown

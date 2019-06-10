@@ -1,19 +1,7 @@
-// ====================================================================
-//var laserCanvas = document.getElementById('canvas-laser');
-// laserCanvas.width = 1280;
-// laserCanvas.height = 720;
-//var ctx = laserCanvas.getContext('2d');
-
-// ======================CHANGES-MADE====================================
 setInterval(updateCanvasLaser, 10);
 var frames = 0;
-// ====================================================================
 
 var laserBeam = [];
-
-// for (var i = 0; i < laserBeam.length; i++) {
-//   laserBeam[i].update();
-// }
 
 function Component(widthvalue, heightvalue, xvalue, yvalue) {
   this.width = widthvalue;
@@ -26,11 +14,7 @@ function Component(widthvalue, heightvalue, xvalue, yvalue) {
     ctx3.fillStyle = 'red';
     ctx3.fillRect(this.x, this.y, this.width, this.height);
   };
-  // function to draw the element in its new position
-  // this.newPos = function() {
-  //   this.x = +this.speedX;
-  //   this.y = +this.speedY;
-  // };
+
   // next 4 lines check the position of the obstacle
   this.left = function() {
     return this.x;
@@ -63,17 +47,13 @@ function Component(widthvalue, heightvalue, xvalue, yvalue) {
 
 function gameOver() {
   setTimeout(function() {
-    // alert('YOU LOST, LOSER');
     window.location.replace('gameover.html');
   }, 10);
-  // location.reload(true);
 }
 
 function updateCanvasLaser() {
   ctx3.clearRect(0, 0, 1200, 720);
   drawImageUfo();
-  // ============================================>
-
   frames++;
 
   if (frames % 25 === 1) {
@@ -93,15 +73,9 @@ function updateCanvasLaser() {
     );
     laserBeam[i].y += 10;
     laserBeam[i].update();
-    // setInterval(laserBeam[i].update, 1000)
-    // console.log(laserBeam[i].crashWith(laserBeam[i])); // ------------ false ?
+
     if (laserBeam[i].crashWith(laserBeam[i]) === true) {
-      // console.log('LOW');
-      // alert('loser');
-      // alert('refresh the game, loser');
       laserBeam = [];
-      // location.reload();
-      // frames = 0;
     }
 
     laserBeam[i].shootPlayer();
